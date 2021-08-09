@@ -4,4 +4,5 @@ import pdb
 print('Original')
 print('First commit')
 print('Second commit')
+print('Modifying something from second commit')
 print('Third commit')
