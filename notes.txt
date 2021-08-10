@@ -1,0 +1,22 @@
+# UPDATE PYPI PACKAGE
+
+## Pseudocode
+dev updates values in setup_batchkit.py 
+cd batch-processing-kit
+
+### Publishing 
+./setup_batchkit.py sdist bdist_wheel
+py -m pip install --upgrade twine
+twine check dist/*
+twine upload dist/* -u __token__ -p pypi-AgEIcHlwaS5vcmcCJDM3NDI0Yjk1LThiOTYtNGU0My1iNGRiLTQwYTEwOTAzN2JhMwACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgoh65u3dJ8iu9PGExJIsLg4u9KH6N1Q4SbeXtEQoxw9A
+
+
+
+
+
+EXTRA
+set HOME variable to parent directory of .pypirc directory
+Configure .pypirc file and place in .pypirc directory 
+ensure "wheel" is installed
+cd batch-processing-kit
+py -m twine upload --repository test_pkg dist/*
